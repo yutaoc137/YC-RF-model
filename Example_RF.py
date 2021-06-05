@@ -6,8 +6,9 @@ from sklearn import metrics
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 
 
+# read the data and print the first 5 rows
 df = pd.read_csv("~/Desktop/data.csv")
-
+# print(df.head(5))
 
 # trim the data
 df_trimmed = df.apply(lambda x: x.str.strip('"') if x.dtype == 'object' else x)
