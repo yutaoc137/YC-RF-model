@@ -19,9 +19,6 @@ df_trimmed = df.apply(lambda x: x.str.strip('"') if x.dtype == 'object' else x)
 
 # Filter rows with missing values
 survey_data = df_trimmed.dropna(axis=0)
-# survey_data1 = survey_data.describe()
-# print(survey_data1)
-
 
 # Choose target and features
 y = survey_data.Mode
