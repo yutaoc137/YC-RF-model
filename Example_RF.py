@@ -39,7 +39,6 @@ print("Accuracy:", metrics.accuracy_score(test_y, mode_preds))
 print(f'Out-of-bag score estimate: {forest_model.oob_score_:.3}')
 print(confusion_matrix(test_y, mode_preds))
 print(classification_report(test_y, mode_preds))
-print(accuracy_score(test_y, mode_preds))
 
 # ROC-AUC curve
 mode_preds = forest_model.predict_proba(test_X)
